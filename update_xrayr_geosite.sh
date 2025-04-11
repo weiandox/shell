@@ -4,7 +4,7 @@
 cd /etc/XrayR || { echo "Failed to change directory to /etc/XrayR"; exit 1; }
 
 # 下载 dlc.dat 文件
-wget https://github.com/v2fly/domain-list-community/releases/download/20250407044718/dlc.dat -O dlc.dat || { echo "Failed to download dlc.dat"; exit 1; }
+wget https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat -O dlc.dat || { echo "Failed to download dlc.dat"; exit 1; }
 
 # 备份原 geosite.dat 文件
 cp geosite.dat geosite.dat.back || { echo "Failed to backup geosite.dat"; exit 1; }
